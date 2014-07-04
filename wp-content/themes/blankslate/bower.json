@@ -1,0 +1,14 @@
+{
+    "name": "tumo",
+    "version": "0.0.1",
+    "dependencies": {
+        "jquery": "~1.10.2"
+        ,"bootstrap-sass-official": "~3.2.0"
+        ,"modernizr": "~2.6.2"
+        ,"html5shiv": "~3.7.0"
+        ,"mustache": "~0.8.1"
+        ,"eonasdan-bootstrap-datetimepicker": "~3.0.0"
+        ,"jquery-ui": "~1.10.4"
+    },
+    "devDependencies": {}
+}
