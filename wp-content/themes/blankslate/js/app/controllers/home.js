@@ -1,0 +1,6 @@
+app.home = {
+	init:function()
+	{
+		
+	}
+};
