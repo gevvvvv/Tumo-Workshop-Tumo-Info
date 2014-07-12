@@ -1,6 +1,55 @@
-/* line 2, scss/style.scss */
+/* line 4, scss/_template.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 9, scss/_template.scss */
 body {
-  margin: 0px;
-  padding: 0px;
-  border: none;
+  background: #dddddd;
+}
+
+/* line 14, scss/_template.scss */
+#Above_Header {
+  width: 100%;
+  height: 133px;
+  background: white;
+}
+
+/* line 21, scss/_template.scss */
+#Header_nav {
+  width: 1043px;
+  height: 133px;
+  margin: 0 auto;
+}
+
+/* line 28, scss/_template.scss */
+#Header_logo {
+  float: left;
+}
+
+/* line 33, scss/_template.scss */
+#Some_text_under_logo {
+  margin-left: 25px;
+  margin-top: -35px;
+}
+
+/* line 39, scss/_template.scss */
+.menu-main-menu-container {
+  float: right;
+  margin-top: 55px;
+}
+/* line 45, scss/_template.scss */
+.menu-main-menu-container #menu-main-menu li {
+  display: inline-block;
+  list-style-type: none;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 18px;
+}
+/* line 53, scss/_template.scss */
+.menu-main-menu-container #menu-main-menu li a {
+  text-decoration: none;
+  color: black;
 }

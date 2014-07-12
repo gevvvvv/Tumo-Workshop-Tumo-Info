@@ -1,0 +1,66 @@
+$body_color:#ddd;
+$header_color:#fff;
+*
+{
+	margin:0;
+	padding:0;
+}
+body
+{
+	background:$body_color;
+}
+
+#Above_Header
+{
+	width:100%;
+	height:133px;
+	background:$header_color;
+}
+
+#Header_nav
+{
+	width:1043px;
+	height:133px;
+	margin:0 auto;
+}
+
+#Header_logo
+{
+	float:left;
+}
+
+#Some_text_under_logo
+{
+	margin-left:25px;
+	margin-top:-35px;
+}
+
+.menu-main-menu-container
+{
+	float:right;
+	margin-top:55px;
+	
+	
+	#menu-main-menu li
+		{
+			display:inline-block;
+			list-style-type:none;
+			font-weight:bold;
+			text-decoration:none;
+			margin-left:20px;
+			font-size:18px;
+			a
+			{
+				text-decoration:none;
+				color:black;
+			}
+		}
+		
+}
+
+
+
+
+
+
+
