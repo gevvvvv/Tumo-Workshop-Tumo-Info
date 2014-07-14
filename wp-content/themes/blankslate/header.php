@@ -11,7 +11,6 @@
 <meta name="description" content="Այս կայքը նախատեսված է Թումոյի նոր ուսանողներին օգնելու հնարավորինս արագ հարմարվել Թումոյին՝ ծանոթանալ մարզիչների հետ և քարտեզի միջոցով իմանալ, թե որ սենյակը ինչի համար է նախատեսված:">
 <script type="text/javascript" src="<?=get_template_directory_uri();?>/js/vendor.js"></script>
 <script type="text/javascript" src="<?=get_template_directory_uri();?>/js/app.js"></script>
-<script type="text/javascript" src="<?=get_template_directory_uri();?>/js/app/controllers/all.js"></script>
 </head>
 <body id = "<?php echo page_body_id();?>" <?php body_class(); ?>>
 <div id="container">

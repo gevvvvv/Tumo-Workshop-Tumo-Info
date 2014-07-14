@@ -29,10 +29,7 @@ module.exports = function(grunt) {
                     'bower_components/jquery/jquery.min.js',
                     'bower_components/modernizr/modernizr.js',
                     'bower_components/html5shiv/dist/html5shiv.js',
-                    'bower_components/mustache/mustache.js',
-                    'bower_components/moment/min/moment.min.js',
-                    'bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js',
-                    'bower_components/jquery-ui/ui/minified/jquery-ui.min.js',
+					'bower_components/maphighlight/jquery.maphilight.min.js',
 
                     //bootstrap must be loaded in this order
                     'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/bootstrap.js'

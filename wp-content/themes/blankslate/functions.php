@@ -78,3 +78,33 @@ function page_body_id() {
 
     return $page;
 }
+
+add_action( 'init', 'post_type_coaches' );
+
+function post_type_coaches() {
+    $labels = array(
+        'name'               => _x( 'coaches', 'post type general name' ),
+        'singular_name'      => _x( 'coaches', 'post type singular name' ),
+        'add_new'            => _x( 'Add New', 'coaches' ),
+        'add_new_item'       => __( 'Add New coaches' ),
+        'edit_item'          => __( 'Edit coaches' ),
+        'new_item'           => __( 'New coaches' ),
+        'all_items'          => __( 'All coaches' ),
+        'view_item'          => __( 'View coaches' ),
+        'search_items'       => __( 'Search coaches' ),
+        'not_found'          => __( 'No coaches found' ),
+        'not_found_in_trash' => __( 'No coaches found in the Trash' ),
+        'parent_item_colon'  => '',
+        'menu_name'          => 'coaches'
+    );
+    $args = array(
+        'labels'        => $labels,
+        'description'   => 'Holds our coaches and coaches specific data',
+        'public'        => true,
+        'menu_position' => 5,
+        'supports'      => array( 'title', 'editor', 'thumbnail', ),
+        'has_archive'   => true,
+        'rewrite'       => array('slug' => 'coaches')
+    );
+    register_post_type( 'coaches', $args );
+}

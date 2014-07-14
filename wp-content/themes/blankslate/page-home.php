@@ -11,7 +11,6 @@
 <div class="entry-links"><?php wp_link_pages(); ?></div>
 </section>
 </article>
-<?php if ( ! post_password_required() ) comments_template( '', true ); ?>
 <?php endwhile; endif; ?>
 <script src = "<?=get_template_directory_uri();?>/js/app/controllers/home.js"></script>
 </section>

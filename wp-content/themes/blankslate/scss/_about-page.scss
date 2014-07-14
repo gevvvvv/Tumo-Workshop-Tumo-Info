@@ -1,0 +1,65 @@
+$body_height:1062px;
+@mixin image_table
+{
+	margin-left:44px;
+	margin-top:20px;
+	img
+	{
+		padding-left:5px;
+	}
+}
+
+@mixin paragraphs
+{
+	font-size:13px;
+    color:#525253;
+    font-family:ArianAMURegular;
+    line-height:18px;
+    text-align:justify;
+	margin-left:44px;
+	width:951px;
+	margin-top:10px;
+}
+
+@mixin headings
+{
+	font-size:25px;
+	font-family:ArianAMURegular;
+	color:#666666;
+	margin-left:44px;
+	padding-top:40px;
+}
+
+#about-us #content
+{
+	width:$body_height;
+	height:692px;
+	background:#fafafa;
+	clear:both;
+	margin:0 auto;
+	border:1px solid #bcbcbc;
+	border-top:0;
+}
+.entry-title
+{
+	@include headings;
+}
+#about-us .entry-content p:nth-child(1)
+{
+	@include image_table;
+}
+
+#about-us .entry-content p:nth-child(3)
+{
+	@include paragraphs;
+}
+
+#about-us #GOOD_Luck
+{
+	font-style:Italic;
+	font-weight:bold;
+	font-size:20px;
+	margin-left:44px;
+	line-height:50px;
+	color:#666666;
+}

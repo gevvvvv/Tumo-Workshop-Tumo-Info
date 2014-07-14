@@ -1,7 +1,7 @@
 app = {}, UTIL = {
     fire: function(i, n, o) {
-        var e = app;
-        n = void 0 === n ? "init" : n, "" !== i && e[i] && "function" == typeof e[i][n] && e[i][n](o);
+        var t = app;
+        n = void 0 === n ? "init" : n, "" !== i && t[i] && "function" == typeof t[i][n] && t[i][n](o);
     },
     loadEvents: function() {
         var i = document.body.id;
@@ -33,7 +33,21 @@ app = {}, UTIL = {
         }
     }, function() {
         $(this).find("a").css("color", "#000");
-    });
+    }), $("#arrow_image img").click(function() {
+        $("html, body").animate({
+            scrollTop: "0px"
+        }, 700);
+    }), ("map" == $("body").attr("id") || "about-us" == $("body").attr("id")) && $("#arrow_image").css("display", "none");
 }), app.home = {
     init: function() {}
+}, app.map = {
+    init: function() {
+        $("#tumo-map").maphilight();
+    },
+    doFirst: function() {
+        var i = 1142;
+        doc = document.getElementById("content"), console.log(doc), iframe = document.getElementById("ifr"), 
+        slaq = document.getElementById("arrow_image"), slaq.style.display = "block", slaq.style.visibility = "visible", 
+        doc.style.height = i + "px", iframe.style.display = "block";
+    }
 };

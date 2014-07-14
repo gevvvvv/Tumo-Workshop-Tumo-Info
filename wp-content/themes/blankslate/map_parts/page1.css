@@ -1,0 +1,46 @@
+#everything
+{
+	width:934px;
+	height:320px;
+}
+
+.images_table li
+{
+	display:inline;
+	padding-left:5px;
+	list-style-type:none;
+}
+
+#Map_image_part
+{
+	margin-top:15px;
+	float:left;
+}
+
+#second_two_lis
+{
+	position:relative;
+	top:-6px;
+}
+
+h3,p
+{
+	font-family:ArianAMURegular;
+	color:#666666;
+}
+
+p
+{
+	font-size:13px;
+	color:#525253;
+	line-height:18px;
+	text-align:justify;
+}
+
+#Description
+{
+	position:relative;
+	top:29px;
+	left:27px;
+	margin-right:68px;
+}

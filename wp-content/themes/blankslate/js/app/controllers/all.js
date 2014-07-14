@@ -23,4 +23,12 @@ $(document).ready(function()
 		{
 			$(this).find("a").css("color","#000");
 		});
+		
+		
+		$("#arrow_image img").click(function()
+		{
+			$("html, body").animate({ scrollTop: "0px" },700);
+		});
+		
+		if ($("body").attr("id") == "map" || $("body").attr("id") == "about-us") $("#arrow_image").css("display","none");
 });
