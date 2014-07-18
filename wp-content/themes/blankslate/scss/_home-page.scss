@@ -1,14 +1,4 @@
 $body_height:1062px;
-@mixin image_table
-{
-	margin-left:44px;
-	margin-top:20px;
-	img
-	{
-		padding-left:5px;
-	}
-}
-
 @mixin paragraphs
 {
 	font-size:13px;
@@ -16,8 +6,8 @@ $body_height:1062px;
     font-family:ArianAMURegular;
     line-height:18px;
     text-align:justify;
-	margin-left:44px;
-	width:951px;
+	margin-left:6px;
+	width:943px;
 	margin-top:10px;
 }
 
@@ -26,14 +16,14 @@ $body_height:1062px;
 	font-size:25px;
 	font-family:ArianAMURegular;
 	color:#666666;
-	margin-left:44px;
+	margin-left:60px;
 	padding-top:40px;
 }
 
 #home #content
 {
 	width:$body_height;
-	height:2015px;
+	height:100%;
 	background:#fafafa;
 	clear:both;
 	margin:0 auto;
@@ -46,14 +36,20 @@ $body_height:1062px;
 	@include headings;
 }
 
-#home .entry-content p:nth-child(1),.entry-content p:nth-child(2),.entry-content p:nth-child(5),.entry-content p:nth-child(8)
+#home .section1
 {
-	@include image_table;
-}
-
-#home .entry-content p:nth-child(3),.entry-content p:nth-child(6),.entry-content p:nth-child(9),.entry-content p:nth-child(11)
-{
-	@include paragraphs;
+	padding-top:20px;
+	margin:0 auto;
+	width:954px;
+	p{
+		@include paragraphs;
+	}
+	p:last-child{
+		margin-bottom:20px;
+	}
+	img{
+			padding-left:6px;
+	}
 }
 
 
