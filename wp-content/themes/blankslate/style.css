@@ -40,15 +40,6 @@ body {
   float: right;
   margin-top: 55px;
 }
-
-.menu-main-menu-container a{
-  -webkit-transition:color 0.5s;
-  -o-transition:color 0.5s;
-  -moz-transition:color 0.5s;
-  -ms-transition:color 0.5s;
-  transition:color 0.5s;
-}
-
 /* line 46, scss/_template.scss */
 .menu-main-menu-container #menu-main-menu li {
   display: inline-block;
@@ -80,10 +71,6 @@ footer {
 .Copyright {
   float: left;
   padding-top: 10px;
-}
-
-#section1{
-  text-align: center;
 }
 
 /* line 81, scss/_template.scss */
@@ -124,6 +111,48 @@ footer {
   cursor: pointer;
 }
 
+/* line 120, scss/_template.scss */
+#facebook {
+  background-image: url(http://localhost/wp-content/uploads/2014/07/socialIcons.png);
+  height: 44px;
+  width: 45px;
+  background-position: 0px 0px;
+  -webkit-transition: background-position 0.3s;
+}
+
+/* line 128, scss/_template.scss */
+#facebook:hover {
+  background-position: 0px 45px;
+}
+
+/* line 132, scss/_template.scss */
+#gmail1 {
+  background-image: url(http://localhost/wp-content/uploads/2014/07/socialIcons.png);
+  height: 44px;
+  width: 45px;
+  background-position: -136px 0px;
+  -webkit-transition: background-position 0.3s;
+}
+
+/* line 140, scss/_template.scss */
+#gmail1:hover {
+  background-position: -136px 45px;
+}
+
+/* line 144, scss/_template.scss */
+#twitter1 {
+  background-image: url(http://localhost/wp-content/uploads/2014/07/socialIcons.png);
+  height: 44px;
+  width: 45px;
+  background-position: 136px 0px;
+  -webkit-transition: background-position 0.3s;
+}
+
+/* line 152, scss/_template.scss */
+#twitter1:hover {
+  background-position: 136px 45px;
+}
+
 /* line 34, scss/_home-page.scss */
 #home #content {
   width: 1062px;
@@ -146,6 +175,7 @@ footer {
 
 /* line 50, scss/_home-page.scss */
 #home .entry-content p:nth-child(1), .entry-content p:nth-child(2), .entry-content p:nth-child(5), .entry-content p:nth-child(8) {
+  margin-left: 44px;
   margin-top: 20px;
 }
 /* line 7, scss/_home-page.scss */

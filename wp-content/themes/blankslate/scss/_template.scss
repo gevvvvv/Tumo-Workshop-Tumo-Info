@@ -117,6 +117,45 @@ footer
 
 
 
+#facebook{
+  background-image: url(http://localhost/wp-content/uploads/2014/07/socialIcons.png);
+  height: 44px;
+  width: 45px;
+  background-position: 0px 0px;
+  -webkit-transition:background-position 0.3s;
+}
+
+#facebook:hover{
+  background-position: 0px 45px;
+}
+
+#gmail1{
+  background-image: url(http://localhost/wp-content/uploads/2014/07/socialIcons.png);
+  height: 44px;
+  width: 45px;
+  background-position: -136px 0px;
+  -webkit-transition:background-position 0.3s;
+}
+
+#gmail1:hover{
+  background-position: -136px 45px;
+}
+
+#twitter1{
+  background-image: url(http://localhost/wp-content/uploads/2014/07/socialIcons.png);
+  height: 44px;
+  width: 45px;
+  background-position: 136px 0px;
+  -webkit-transition:background-position 0.3s;
+}
+
+#twitter1:hover{
+  background-position: 136px 45px;
+}
+
+
+
+
 
 
 

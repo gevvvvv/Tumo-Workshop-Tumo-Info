@@ -9,9 +9,9 @@
 			<div id="masters">Tumo Creative Centre for Technologies</div>
 			<div id="find_us">
 					<ul id="Logo_row">
-						<li><a href="https://www.facebook.com/hovakimyan.hrayr?fref=ts" target="_blank"><img src="" ></a></li>
-						<li><a href="https://mail.google.com/mail/u/0/?shva=1#inbox" target="_blank"><img src="http://localhost/wp-content/uploads/2014/07/gmail.jpg" height="32" width="30"></a></li>
-						<li><a href="https://twitter.com/HrayrHovakimyan" target="_blank"><img src="http://localhost/wp-content/uploads/2014/07/twitter.jpg" height="32" width="30"></a></li>
+						<a href="https://www.facebook.com/hovakimyan.hrayr?fref=ts" target="_blank"><li id="facebook"></li></a>
+						<a href="https://mail.google.com/mail/u/0/?shva=1#inbox" target="_blank"><li id="gmail1"></li></a>
+						<a href="https://twitter.com/HrayrHovakimyan" target="_blank"><li id="twitter1"></li></a>
 					</ul>
 			</div>
 		</div>
