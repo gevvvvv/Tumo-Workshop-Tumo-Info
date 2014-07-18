@@ -153,6 +153,77 @@ footer {
   margin-top: 10px;
 }
 
+/* line 21, scss/_stuff-page.scss */
+#coaches #content {
+  width: 1062px;
+  height: 100%;
+  background: #fafafa;
+  clear: both;
+  margin: 0 auto;
+  border: 1px solid #bcbcbc;
+  border-top: 0;
+}
+
+/* line 33, scss/_stuff-page.scss */
+.alignnone {
+  margin-left: 20px;
+  padding-top: 10px;
+}
+
+/* line 39, scss/_stuff-page.scss */
+#coaches .entry-content p:nth-child(2) {
+  font-size: 13px;
+  color: #525253;
+  font-family: ArianAMURegular;
+  line-height: 18px;
+  margin-left: 20px;
+  text-align: justify;
+  width: 1022px;
+  margin-top: 10px;
+}
+
+/* line 43, scss/_stuff-page.scss */
+section#coaches {
+  margin-top: 80px;
+}
+
+/* line 49, scss/_stuff-page.scss */
+#coaches .Coach_personality {
+  width: 1022px;
+  height: 140px;
+  margin-left: 20px;
+  padding-top: 30px;
+}
+
+/* line 57, scss/_stuff-page.scss */
+#coaches .Coach_official_image {
+  float: left;
+}
+
+/* line 62, scss/_stuff-page.scss */
+#coaches .About_Coach {
+  padding-left: 168px;
+}
+
+/* line 67, scss/_stuff-page.scss */
+#coaches .Coach_Abilities {
+  width: 750px;
+  font-size: 16px;
+  padding-top: 5px;
+}
+
+/* line 74, scss/_stuff-page.scss */
+#coaches .Coach_name, #coaches .Coach_Abilities {
+  color: #525253;
+  font-family: ArianAMURegular;
+  line-height: 18px;
+}
+
+/* line 79, scss/_stuff-page.scss */
+#coaches .Coach_personality:last-child {
+  margin-bottom: 30px;
+}
+
 /* line 3, scss/_map-page.scss */
 #map #content {
   width: 1062px;

@@ -1,12 +1,12 @@
 app = {}, UTIL = {
-    fire: function(i, n, o) {
-        var t = app;
-        n = void 0 === n ? "init" : n, "" !== i && t[i] && "function" == typeof t[i][n] && t[i][n](o);
+    fire: function(i, n, e) {
+        var o = app;
+        n = void 0 === n ? "init" : n, "" !== i && o[i] && "function" == typeof o[i][n] && o[i][n](e);
     },
     loadEvents: function() {
         var i = document.body.id;
-        UTIL.fire("common"), UTIL.fire(i), $.each(document.body.className.split(/\s+/), function(n, o) {
-            UTIL.fire(i, o);
+        UTIL.fire("common"), UTIL.fire(i), $.each(document.body.className.split(/\s+/), function(n, e) {
+            UTIL.fire(i, e);
         }), UTIL.fire("common", "finalize");
     }
 }, $(document).ready(UTIL.loadEvents), app.common = {
@@ -36,7 +36,7 @@ app = {}, UTIL = {
     }), $("#arrow_image img").click(function() {
         $("html, body").animate({
             scrollTop: "0px"
-        }, 700);
+        }, 700, "linear");
     }), ("map" == $("body").attr("id") || "about-us" == $("body").attr("id")) && $("#arrow_image").css("display", "none");
 }), app.home = {
     init: function() {}
