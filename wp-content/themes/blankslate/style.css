@@ -268,7 +268,7 @@ section#coaches {
   overflow: hidden;
 }
 
-/* line 34, scss/_about-page.scss */
+/* line 16, scss/_about-page.scss */
 #about-us #content {
   width: 1062px;
   height: 692px;
@@ -278,44 +278,41 @@ section#coaches {
   border: 1px solid #bcbcbc;
   border-top: 0;
 }
-
-/* line 44, scss/_about-page.scss */
-.entry-title {
+/* line 26, scss/_about-page.scss */
+#about-us header h1 {
   font-size: 25px;
   font-family: ArianAMURegular;
   color: #666666;
-  margin-left: 44px;
+  margin-left: 55px;
   padding-top: 40px;
 }
-
-/* line 48, scss/_about-page.scss */
-#about-us .entry-content p:nth-child(1) {
-  margin-left: 44px;
-  margin-top: 20px;
+/* line 36, scss/_about-page.scss */
+#about-us .section1 {
+  padding-top: 20px;
+  margin: 0 auto;
+  width: 954px;
 }
-/* line 7, scss/_about-page.scss */
-#about-us .entry-content p:nth-child(1) img {
-  padding-left: 5px;
-}
-
-/* line 53, scss/_about-page.scss */
-#about-us .entry-content p:nth-child(3) {
+/* line 40, scss/_about-page.scss */
+#about-us .section1 p:last-child {
+  margin-bottom: 20px;
   font-size: 13px;
   color: #525253;
   font-family: ArianAMURegular;
   line-height: 18px;
   text-align: justify;
-  margin-left: 44px;
+  margin-left: 6px;
   width: 951px;
   margin-top: 10px;
 }
-
-/* line 58, scss/_about-page.scss */
+/* line 44, scss/_about-page.scss */
+#about-us .section1 img {
+  padding-left: 6px;
+}
+/* line 50, scss/_about-page.scss */
 #about-us #GOOD_Luck {
-  font-style: Italic;
   font-weight: bold;
   font-size: 20px;
-  margin-left: 44px;
+  margin-left: 55px;
   line-height: 50px;
-  color: #666666;
+  color: #000;
 }

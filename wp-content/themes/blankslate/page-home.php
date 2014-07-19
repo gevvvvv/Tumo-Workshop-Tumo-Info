@@ -12,6 +12,5 @@
 </section>
 </article>
 <?php endwhile; endif; ?>
-<script src = "<?=get_template_directory_uri();?>/js/app/controllers/home.js"></script>
 </section>
 <?php get_footer(); ?>

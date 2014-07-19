@@ -9,6 +9,7 @@ $items = new WP_Query(
     )
 );
 
+
 //reseting the query
 wp_reset_query();
 
@@ -18,13 +19,14 @@ $posts = $items->posts;
 <section id="content" role="main">
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<section class="entry-content">
-			<?=$post->post_content;?>
+		<section class="entry-content">
+				<?php the_content(); ?>
+				<?=$post->post_content;?>
 		</section>
 		<section id="coaches">
 			<?php foreach($posts as $item):
 			$item->meta = get_fields($item->ID);
-			
+
 			?>
 			<div class = "Coach_personality">
 				<div class = "Coach_official_image">
