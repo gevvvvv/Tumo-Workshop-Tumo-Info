@@ -1,46 +1,361 @@
-/* line 4, scss/_template.scss */
+/*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
+/* line 12, bower_components/fancybox/source/jquery.scss */
+.fancybox-wrap,
+.fancybox-skin,
+.fancybox-outer,
+.fancybox-inner,
+.fancybox-image,
+.fancybox-wrap iframe,
+.fancybox-wrap object,
+.fancybox-nav,
+.fancybox-nav span,
+.fancybox-tmp {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  vertical-align: top;
+}
+
+/* line 20, bower_components/fancybox/source/jquery.scss */
+.fancybox-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 8020;
+}
+
+/* line 27, bower_components/fancybox/source/jquery.scss */
+.fancybox-skin {
+  position: relative;
+  background: #f9f9f9;
+  color: #444;
+  text-shadow: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 37, bower_components/fancybox/source/jquery.scss */
+.fancybox-opened {
+  z-index: 8030;
+}
+
+/* line 41, bower_components/fancybox/source/jquery.scss */
+.fancybox-opened .fancybox-skin {
+  -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* line 47, bower_components/fancybox/source/jquery.scss */
+.fancybox-outer, .fancybox-inner {
+  position: relative;
+}
+
+/* line 51, bower_components/fancybox/source/jquery.scss */
+.fancybox-inner {
+  overflow: hidden;
+}
+
+/* line 55, bower_components/fancybox/source/jquery.scss */
+.fancybox-type-iframe .fancybox-inner {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 59, bower_components/fancybox/source/jquery.scss */
+.fancybox-error {
+  color: #444;
+  font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+  padding: 15px;
+  white-space: nowrap;
+}
+
+/* line 67, bower_components/fancybox/source/jquery.scss */
+.fancybox-image, .fancybox-iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 73, bower_components/fancybox/source/jquery.scss */
+.fancybox-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* line 78, bower_components/fancybox/source/jquery.scss */
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+  background-image: url("fancybox_sprite.png");
+}
+
+/* line 82, bower_components/fancybox/source/jquery.scss */
+#fancybox-loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -22px;
+  margin-left: -22px;
+  background-position: 0 -108px;
+  opacity: 0.8;
+  cursor: pointer;
+  z-index: 8060;
+}
+
+/* line 94, bower_components/fancybox/source/jquery.scss */
+#fancybox-loading div {
+  width: 44px;
+  height: 44px;
+  background: url("fancybox_loading.gif") center center no-repeat;
+}
+
+/* line 100, bower_components/fancybox/source/jquery.scss */
+.fancybox-close {
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 8040;
+}
+
+/* line 110, bower_components/fancybox/source/jquery.scss */
+.fancybox-nav {
+  position: absolute;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  background: transparent url("blank.gif");
+  /* helps IE */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  z-index: 8040;
+}
+
+/* line 122, bower_components/fancybox/source/jquery.scss */
+.fancybox-prev {
+  left: 0;
+}
+
+/* line 126, bower_components/fancybox/source/jquery.scss */
+.fancybox-next {
+  right: 0;
+}
+
+/* line 130, bower_components/fancybox/source/jquery.scss */
+.fancybox-nav span {
+  position: absolute;
+  top: 50%;
+  width: 36px;
+  height: 34px;
+  margin-top: -18px;
+  cursor: pointer;
+  z-index: 8040;
+  visibility: hidden;
+}
+
+/* line 141, bower_components/fancybox/source/jquery.scss */
+.fancybox-prev span {
+  left: 10px;
+  background-position: 0 -36px;
+}
+
+/* line 146, bower_components/fancybox/source/jquery.scss */
+.fancybox-next span {
+  right: 10px;
+  background-position: 0 -72px;
+}
+
+/* line 151, bower_components/fancybox/source/jquery.scss */
+.fancybox-nav:hover span {
+  visibility: visible;
+}
+
+/* line 155, bower_components/fancybox/source/jquery.scss */
+.fancybox-tmp {
+  position: absolute;
+  top: -99999px;
+  left: -99999px;
+  visibility: hidden;
+  max-width: 99999px;
+  max-height: 99999px;
+  overflow: visible !important;
+}
+
+/* Overlay helper */
+/* line 167, bower_components/fancybox/source/jquery.scss */
+.fancybox-lock {
+  overflow: hidden !important;
+  width: auto;
+}
+
+/* line 172, bower_components/fancybox/source/jquery.scss */
+.fancybox-lock body {
+  overflow: hidden !important;
+}
+
+/* line 176, bower_components/fancybox/source/jquery.scss */
+.fancybox-lock-test {
+  overflow-y: hidden !important;
+}
+
+/* line 180, bower_components/fancybox/source/jquery.scss */
+.fancybox-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: none;
+  z-index: 8010;
+  background: url("fancybox_overlay.png");
+}
+
+/* line 190, bower_components/fancybox/source/jquery.scss */
+.fancybox-overlay-fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+/* line 196, bower_components/fancybox/source/jquery.scss */
+.fancybox-lock .fancybox-overlay {
+  overflow: auto;
+  overflow-y: scroll;
+}
+
+/* Title helper */
+/* line 203, bower_components/fancybox/source/jquery.scss */
+.fancybox-title {
+  visibility: hidden;
+  font: normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  position: relative;
+  text-shadow: none;
+  z-index: 8050;
+}
+
+/* line 211, bower_components/fancybox/source/jquery.scss */
+.fancybox-opened .fancybox-title {
+  visibility: visible;
+}
+
+/* line 215, bower_components/fancybox/source/jquery.scss */
+.fancybox-title-float-wrap {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  margin-bottom: -35px;
+  z-index: 8050;
+  text-align: center;
+}
+
+/* line 224, bower_components/fancybox/source/jquery.scss */
+.fancybox-title-float-wrap .child {
+  display: inline-block;
+  margin-right: -100%;
+  padding: 2px 20px;
+  background: transparent;
+  /* Fallback for web browsers that doesn't support RGBa */
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  text-shadow: 0 1px 2px #222;
+  color: #FFF;
+  font-weight: bold;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+/* line 240, bower_components/fancybox/source/jquery.scss */
+.fancybox-title-outside-wrap {
+  position: relative;
+  margin-top: 10px;
+  color: #fff;
+}
+
+/* line 246, bower_components/fancybox/source/jquery.scss */
+.fancybox-title-inside-wrap {
+  padding-top: 10px;
+}
+
+/* line 250, bower_components/fancybox/source/jquery.scss */
+.fancybox-title-over-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  padding: 10px;
+  background: #000;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/*Retina graphics!*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 265, bower_components/fancybox/source/jquery.scss */
+  #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+    background-image: url("fancybox_sprite@2x.png");
+    background-size: 44px 152px;
+    /*The size of the normal image, half the size of the hi-res image*/
+  }
+
+  /* line 270, bower_components/fancybox/source/jquery.scss */
+  #fancybox-loading div {
+    background-image: url("fancybox_loading@2x.gif");
+    background-size: 24px 24px;
+    /*The size of the normal image, half the size of the hi-res image*/
+  }
+}
+/* line 2, scss/style.scss */
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+  background-image: url("bower_components/fancybox/source/fancybox_sprite.png");
+}
+
+/* line 17, scss/_template.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 9, scss/_template.scss */
+/* line 22, scss/_template.scss */
 body {
-  background: #dddddd;
+  background: #ddd;
 }
 
-/* line 14, scss/_template.scss */
+/* line 27, scss/_template.scss */
 #Above_Header {
   width: 100%;
   height: 133px;
-  background: white;
+  background: #fff;
   border-bottom: 1px solid #bcbcbc;
 }
 
-/* line 22, scss/_template.scss */
+/* line 35, scss/_template.scss */
 #Header_nav {
   width: 1043px;
   height: 133px;
   margin: 0 auto;
 }
 
-/* line 29, scss/_template.scss */
+/* line 42, scss/_template.scss */
 #Header_logo {
   float: left;
 }
 
-/* line 34, scss/_template.scss */
+/* line 47, scss/_template.scss */
 #Some_text_under_logo {
   margin-left: 25px;
   margin-top: -35px;
 }
 
-/* line 40, scss/_template.scss */
+/* line 53, scss/_template.scss */
 .menu-main-menu-container {
   float: right;
   margin-top: 55px;
 }
-/* line 46, scss/_template.scss */
+/* line 59, scss/_template.scss */
 .menu-main-menu-container #menu-main-menu li {
   display: inline-block;
   list-style-type: none;
@@ -49,13 +364,14 @@ body {
   margin-left: 20px;
   font-size: 18px;
 }
-/* line 54, scss/_template.scss */
+/* line 67, scss/_template.scss */
 .menu-main-menu-container #menu-main-menu li a {
   text-decoration: none;
   color: black;
+  transition: all 0.3s;
 }
 
-/* line 63, scss/_template.scss */
+/* line 77, scss/_template.scss */
 footer {
   width: 1062px;
   height: 78px;
@@ -65,53 +381,101 @@ footer {
   font-size: 14px;
   font-style: italic;
   border-bottom: 1px solid #666666;
+  padding-bottom: 15px;
 }
 
-/* line 75, scss/_template.scss */
+/* line 90, scss/_template.scss */
 .Copyright {
   float: left;
   padding-top: 10px;
 }
 
-/* line 81, scss/_template.scss */
+/* line 96, scss/_template.scss */
 #second_item {
   line-height: 25px;
 }
 
-/* line 86, scss/_template.scss */
+/* line 101, scss/_template.scss */
 .right_footer {
   float: right;
 }
 
-/* line 91, scss/_template.scss */
+/* line 106, scss/_template.scss */
 #masters {
   padding-top: 10px;
 }
 
-/* line 96, scss/_template.scss */
+/* line 111, scss/_template.scss */
 #find_us {
   margin-left: 125px;
   margin-top: 8px;
 }
 
-/* line 102, scss/_template.scss */
+/* line 117, scss/_template.scss */
 #Logo_row li {
   display: inline-block;
   list-style-type: none;
 }
 
-/* line 108, scss/_template.scss */
+/* line 123, scss/_template.scss */
 #arrow_image {
-  margin-left: 1161px;
-  line-height: 125px;
+  position: fixed;
+  left: 1700px;
+  top: 900px;
 }
-
-/* line 114, scss/_template.scss */
+/* line 128, scss/_template.scss */
 #arrow_image:hover {
   cursor: pointer;
 }
+/* line 132, scss/_template.scss */
+#arrow_image img {
+  transition: opacity 0.5s;
+  width: 66px;
+  opacity: 0;
+}
 
-/* line 24, scss/_home-page.scss */
+/* line 139, scss/_template.scss */
+#fb_logo {
+  background-image: url(http://localhost/wp-content/uploads/2014/07/socialIcons.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  height: 45px;
+  width: 45px;
+  transition: background-position 0.5s;
+}
+/* line 12, scss/_template.scss */
+#fb_logo:hover {
+  background-position: 0px -45px;
+}
+
+/* line 142, scss/_template.scss */
+#gmail_logo {
+  background-image: url(http://localhost/wp-content/uploads/2014/07/socialIcons.png);
+  background-repeat: no-repeat;
+  background-position: -136px 0px;
+  height: 45px;
+  width: 45px;
+  transition: background-position 0.5s;
+}
+/* line 12, scss/_template.scss */
+#gmail_logo:hover {
+  background-position: -136px -45px;
+}
+
+/* line 145, scss/_template.scss */
+#twitter_logo {
+  background-image: url(http://localhost/wp-content/uploads/2014/07/socialIcons.png);
+  background-position: 135px 0px;
+  height: 45px;
+  width: 45px;
+  transition: background-position 0.5s;
+}
+/* line 12, scss/_template.scss */
+#twitter_logo:hover {
+  background-position: 135px -45px;
+}
+
+/* line 26, scss/_home-page.scss */
 #home #content {
   width: 1062px;
   height: 100%;
@@ -121,23 +485,21 @@ footer {
   border: 1px solid #bcbcbc;
   border-top: 0;
 }
-
-/* line 35, scss/_home-page.scss */
-#home h1, h2 {
+/* line 37, scss/_home-page.scss */
+#home h1, #home h2 {
   font-size: 25px;
   font-family: ArianAMURegular;
   color: #666666;
   margin-left: 60px;
   padding-top: 40px;
 }
-
-/* line 40, scss/_home-page.scss */
+/* line 43, scss/_home-page.scss */
 #home .section1 {
   padding-top: 20px;
   margin: 0 auto;
   width: 954px;
 }
-/* line 44, scss/_home-page.scss */
+/* line 47, scss/_home-page.scss */
 #home .section1 p {
   font-size: 13px;
   color: #525253;
@@ -148,16 +510,16 @@ footer {
   width: 943px;
   margin-top: 10px;
 }
-/* line 47, scss/_home-page.scss */
+/* line 50, scss/_home-page.scss */
 #home .section1 p:last-child {
   margin-bottom: 20px;
 }
-/* line 50, scss/_home-page.scss */
+/* line 53, scss/_home-page.scss */
 #home .section1 img {
   padding-left: 6px;
 }
 
-/* line 21, scss/_stuff-page.scss */
+/* line 23, scss/_stuff-page.scss */
 #coaches #content {
   width: 1062px;
   height: 100%;
@@ -167,14 +529,12 @@ footer {
   border: 1px solid #bcbcbc;
   border-top: 0;
 }
-
-/* line 33, scss/_stuff-page.scss */
+/* line 34, scss/_stuff-page.scss */
 #coaches .alignnone {
   margin-left: 20px;
   padding-top: 10px;
 }
-
-/* line 39, scss/_stuff-page.scss */
+/* line 40, scss/_stuff-page.scss */
 #coaches .entry-content p:nth-child(2) {
   font-size: 13px;
   color: #525253;
@@ -185,12 +545,10 @@ footer {
   width: 1022px;
   margin-top: 10px;
 }
-
-/* line 43, scss/_stuff-page.scss */
-section#coaches {
+/* line 44, scss/_stuff-page.scss */
+#coaches section#coaches {
   margin-top: 80px;
 }
-
 /* line 49, scss/_stuff-page.scss */
 #coaches .Coach_personality {
   width: 1022px;
@@ -198,37 +556,32 @@ section#coaches {
   margin-left: 20px;
   padding-top: 30px;
 }
-
 /* line 57, scss/_stuff-page.scss */
 #coaches .Coach_official_image {
   float: left;
 }
-
 /* line 62, scss/_stuff-page.scss */
 #coaches .About_Coach {
   padding-left: 168px;
 }
-
 /* line 67, scss/_stuff-page.scss */
 #coaches .Coach_Abilities {
   width: 750px;
   font-size: 16px;
   padding-top: 5px;
 }
-
 /* line 74, scss/_stuff-page.scss */
-#coaches .Coach_name, #coaches .Coach_Abilities {
+#coaches .Coach_name, #coaches #coaches .Coach_Abilities {
   color: #525253;
   font-family: ArianAMURegular;
   line-height: 18px;
 }
-
 /* line 79, scss/_stuff-page.scss */
 #coaches .Coach_personality:last-child {
   margin-bottom: 30px;
 }
 
-/* line 3, scss/_map-page.scss */
+/* line 5, scss/_map-page.scss */
 #map #content {
   width: 1062px;
   height: 692px;
@@ -238,14 +591,12 @@ section#coaches {
   border: 1px solid #bcbcbc;
   border-top: 0;
 }
-
-/* line 14, scss/_map-page.scss */
+/* line 16, scss/_map-page.scss */
 #map .Tumo_map_image {
   margin-left: 20px;
   padding-top: 15px;
 }
-
-/* line 20, scss/_map-page.scss */
+/* line 22, scss/_map-page.scss */
 #map #Explain_smth {
   font-size: 13px;
   color: #525253;
@@ -254,13 +605,11 @@ section#coaches {
   margin-top: 10px;
   margin-left: 20px;
 }
-
-/* line 30, scss/_map-page.scss */
+/* line 32, scss/_map-page.scss */
 #map #Image_iframe {
   margin-left: 20px;
   margin-top: 60px;
 }
-
 /* line 36, scss/_map-page.scss */
 #map #Image_iframe iframe {
   border: 1px solid #bcbcbc;

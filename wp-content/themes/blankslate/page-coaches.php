@@ -12,7 +12,6 @@ $items = new WP_Query(
 
 //reseting the query
 wp_reset_query();
-
 $posts = $items->posts;
 ?>
 <?php get_header(); ?>
@@ -21,7 +20,7 @@ $posts = $items->posts;
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<section class="entry-content">
 				<?php the_content(); ?>
-				<?=$post->post_content;?>
+
 		</section>
 		<section id="coaches">
 			<?php foreach($posts as $item):
@@ -30,7 +29,7 @@ $posts = $items->posts;
 			?>
 			<div class = "Coach_personality">
 				<div class = "Coach_official_image">
-					<img src="<?=$item->meta["image"]["sizes"]["thumbnail"];?>" />
+				<a class="fancybox" rel="gallery1" href = "<?=$item->meta["image"]["url"];?>"><img src="<?=$item->meta["image"]["sizes"]["thumbnail"];?>"/></a>
 				</div>
 				<div class="About_Coach">
 					<h3 class="Coach_name"><?=$item->post_title;?></h3>

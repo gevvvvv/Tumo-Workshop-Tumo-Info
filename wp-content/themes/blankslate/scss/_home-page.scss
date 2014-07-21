@@ -20,36 +20,40 @@ $body_height:1062px;
 	padding-top:40px;
 }
 
-#home #content
+#home 
 {
-	width:$body_height;
-	height:100%;
-	background:#fafafa;
-	clear:both;
-	margin:0 auto;
-	border:1px solid #bcbcbc;
-	border-top:0;
-}
-
-#home h1,h2
-{
-	@include headings;
-}
-
-#home .section1
-{
-	padding-top:20px;
-	margin:0 auto;
-	width:954px;
-	p{
-		@include paragraphs;
-	}
-	p:last-child{
-		margin-bottom:20px;
-	}
-	img{
-			padding-left:6px;
-	}
+	#content
+		{
+			width:$body_height;
+			height:100%;
+			background:#fafafa;
+			clear:both;
+			margin:0 auto;
+			border:1px solid #bcbcbc;
+			border-top:0;
+		}
+		
+	 h1,h2
+		{
+			@include headings;
+		}
+		
+		
+	.section1
+		{
+			padding-top:20px;
+			margin:0 auto;
+			width:954px;
+			p{
+				@include paragraphs;
+			}
+			p:last-child{
+				margin-bottom:20px;
+			}
+			img{
+					padding-left:6px;
+			}
+		}
 }
 
 

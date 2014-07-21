@@ -1,3 +1,8 @@
+@import "../bower_components/fancybox/source/jquery";
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+	background-image: url('bower_components/fancybox/source/fancybox_sprite.png');
+}
+
 @import "_template";
 @import "_home-page";
 @import "_stuff-page";
