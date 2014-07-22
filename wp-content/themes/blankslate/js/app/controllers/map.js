@@ -8,7 +8,6 @@ app.map = {
 	{
 		var s=1142;
 		doc=document.getElementById('content');
-		console.log(doc);
 		iframe=document.getElementById('ifr');
 		slaq = document.getElementById("arrow_image");
 		slaq.style.display='block';

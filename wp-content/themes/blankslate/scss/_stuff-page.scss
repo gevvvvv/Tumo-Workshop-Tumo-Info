@@ -32,11 +32,19 @@
 		
 	.alignnone 
 		{
-			margin-left:20px;
+			margin:0 auto;
 			padding-top:10px;
+			width:1022px;
+			height:650px;
+			img
+				{
+					width:1022px;
+					height:650px;
+					position:absolute;
+				}
 		}
 		
-	.entry-content p:nth-child(2)
+	#desc
 		{
 			@include paragraphs;
 		}
@@ -64,11 +72,11 @@
 		}
 		
 	.Coach_Abilities
-	{
-		width:750px;
-		font-size:16px;
-		padding-top:5px;
-	}
+		{
+			width:750px;
+			font-size:16px;
+			padding-top:5px;
+		}
 	
 	.Coach_name,#coaches .Coach_Abilities
 		{
