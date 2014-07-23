@@ -1,41 +1,43 @@
 $body_height:1062px;
-#map #content
+#map 
 {
-	width:$body_height;
-	height:692px;
-	background:#fafafa;
-	clear:both;
-	margin:0 auto;
-	border:1px solid #bcbcbc;
-	border-top:0;
-}
-
-#map .Tumo_map_image
-{
-	margin-left:20px;
-	padding-top:15px;
-}
-
-#map #Explain_smth
-{
- font-size:13px;
- color:#525253;
- font-family:ArianAMURegular;
- line-height:18px;
- margin-top:10px;
- margin-left:20px;
-}
-
-#map #Image_iframe
-{
-	margin-left:20px;
-	margin-top:60px;
-}
-
-#map #Image_iframe iframe
-{
-	border:1px solid #bcbcbc;
-	display:none;
-	overflow:hidden;
+	#content
+		{
+			width:$body_height;
+			height:692px;
+			background:#fafafa;
+			clear:both;
+			margin:0 auto;
+			border:1px solid #bcbcbc;
+			border-top:0;
+		}
+		
+	.Tumo_map_image
+		{
+			margin-left:20px;
+			padding-top:15px;
+		}
+		
+	#Explain_smth
+		{
+			 font-size:13px;
+			 color:#525253;
+			 font-family:ArianAMURegular;
+			 line-height:18px;
+			 margin-top:10px;
+			 margin-left:20px;
+		}
+		
+	#Image_iframe
+		{
+			margin-left:20px;
+			margin-top:60px;
+			iframe
+				{
+					border:1px solid #bcbcbc;
+					display:none;
+					overflow:hidden;
+				}
+		}
 }
 

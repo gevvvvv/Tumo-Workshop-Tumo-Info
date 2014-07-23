@@ -104,7 +104,7 @@ function post_type_coaches() {
         'menu_position' => 5,
         'supports'      => array( 'title', 'editor', 'thumbnail', ),
         'has_archive'   => true,
-        'rewrite'       => array('slug' => 'coaches')
+        'rewrite'       => array('slug' => 'coaches-list')
     );
     register_post_type( 'coaches', $args );
 }

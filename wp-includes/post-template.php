@@ -13,6 +13,8 @@
  *
  * @since 0.71
  */
+ 
+
 function the_ID() {
 	echo get_the_ID();
 }
@@ -39,6 +41,7 @@ function get_the_ID() {
  * @param bool $echo Optional, default to true.Whether to display or return.
  * @return null|string Null on no title. String if $echo parameter is false.
  */
+ 
 function the_title($before = '', $after = '', $echo = true) {
 	$title = get_the_title();
 

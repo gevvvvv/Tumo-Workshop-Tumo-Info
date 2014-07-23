@@ -17,67 +17,76 @@
 	line-height:18px;
 }
 
-#coaches #content
+#coaches 
 {
-	width:$body_height;
-	height:100%;
-	background:#fafafa;
-	clear:both;
-	margin:0 auto;
-	border:1px solid #bcbcbc;
-	border-top:0;
-}
-
-
-#coaches .alignnone 
-{
-	margin-left:20px;
-	padding-top:10px;
-}
-
-#coaches .entry-content p:nth-child(2)
-{
-	@include paragraphs;
-}
-
-section#coaches{
-	margin-top:80px;
-}
-
-
-#coaches .Coach_personality
-{
-	width:1022px;
-	height:140px;
-	margin-left:20px;
-	padding-top:30px;
-}
-
-#coaches .Coach_official_image
-{
-	float:left;
-}
-
-#coaches .About_Coach
-{
-	padding-left:168px;
-}
-
-#coaches .Coach_Abilities
-{
-	width:750px;
-	font-size:16px;
-	padding-top:5px;
-}
-
-#coaches .Coach_name,#coaches .Coach_Abilities
-{
-	@include styles;
-}
-
-#coaches .Coach_personality:last-child
-{
-	margin-bottom:30px;
+	#content
+		{
+			width:$body_height;
+			height:100%;
+			background:#fafafa;
+			clear:both;
+			margin:0 auto;
+			border:1px solid #bcbcbc;
+			border-top:0;
+		}
+		
+	.alignnone 
+		{
+			margin:0 auto;
+			padding-top:10px;
+			width:1022px;
+			height:650px;
+			img
+				{
+					width:1022px;
+					height:650px;
+					position:absolute;
+				}
+		}
+		
+	#desc
+		{
+			@include paragraphs;
+		}
+		
+	section#coaches{
+		margin-top:80px;
+	}
+	
+	.Coach_personality
+		{
+			width:1022px;
+			height:140px;
+			margin-left:20px;
+			padding-top:30px;
+		}
+		
+	.Coach_official_image
+		{
+			float:left;
+		}
+		
+	.About_Coach
+		{
+			padding-left:168px;
+		}
+		
+	.Coach_Abilities
+		{
+			width:750px;
+			font-size:16px;
+			padding-top:5px;
+		}
+	
+	.Coach_name,#coaches .Coach_Abilities
+		{
+			@include styles;
+		}
+		
+	.Coach_personality:last-child
+		{
+			margin-bottom:30px;
+		}
 }
 
 
