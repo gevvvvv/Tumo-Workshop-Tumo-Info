@@ -475,6 +475,48 @@ footer {
   background-position: 135px -45px;
 }
 
+/* line 149, scss/_template.scss */
+#facebook {
+  background-image: url(http://localhost/wp-content/uploads/2014/07/socialIcons.png);
+  height: 44px;
+  width: 45px;
+  background-position: 0px 0px;
+  -webkit-transition: background-position 0.3s;
+}
+
+/* line 157, scss/_template.scss */
+#facebook:hover {
+  background-position: 0px 45px;
+}
+
+/* line 161, scss/_template.scss */
+#gmail1 {
+  background-image: url(http://localhost/wp-content/uploads/2014/07/socialIcons.png);
+  height: 44px;
+  width: 45px;
+  background-position: -136px 0px;
+  -webkit-transition: background-position 0.3s;
+}
+
+/* line 169, scss/_template.scss */
+#gmail1:hover {
+  background-position: -136px 45px;
+}
+
+/* line 173, scss/_template.scss */
+#twitter1 {
+  background-image: url(http://localhost/wp-content/uploads/2014/07/socialIcons.png);
+  height: 44px;
+  width: 45px;
+  background-position: 136px 0px;
+  -webkit-transition: background-position 0.3s;
+}
+
+/* line 181, scss/_template.scss */
+#twitter1:hover {
+  background-position: 136px 45px;
+}
+
 /* line 23, scss/_home-page.scss */
 * {
   transition: all 0.5s;

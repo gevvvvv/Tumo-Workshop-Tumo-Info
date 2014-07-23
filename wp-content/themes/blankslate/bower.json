@@ -9,7 +9,7 @@
     "mustache": "~0.8.1",
     "eonasdan-bootstrap-datetimepicker": "~3.0.0",
     "jquery-ui": "~1.10.4",
-    "maphighlight": "git@github.com:kemayo/maphilight.git",
+    "maphighlight": "https://github.com/kemayo/maphilight.git",
 	"fancybox":"2.1.5"
   },
   "devDependencies": {},

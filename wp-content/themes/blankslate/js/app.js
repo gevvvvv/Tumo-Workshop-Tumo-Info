@@ -44,7 +44,33 @@ app = {}, UTIL = {
         });
     },
     finalize: function() {}
-}, app.home = {
+}, $(document).ready(function() {
+    $("#menu-main-menu li").hover(function() {
+        var i = $(this).attr("id");
+        switch (i) {
+          case "menu-item-13":
+            $(this).find("a").css("color", "#f69230");
+            break;
+
+          case "menu-item-17":
+            $(this).find("a").css("color", "#f05f42");
+            break;
+
+          case "menu-item-15":
+            $(this).find("a").css("color", "#5588c1");
+            break;
+
+          case "menu-item-14":
+            $(this).find("a").css("color", "#a1d147");
+        }
+    }, function() {
+        $(this).find("a").css("color", "#000");
+    }), $("#arrow_image img").click(function() {
+        $("html, body").animate({
+            scrollTop: "0px"
+        }, 700, "linear");
+    }), ("map" == $("body").attr("id") || "about-us" == $("body").attr("id")) && $("#arrow_image").css("display", "none");
+}), app.home = {
     init: function() {}
 }, app.map = {
     init: function() {
