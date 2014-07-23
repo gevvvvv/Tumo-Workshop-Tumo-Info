@@ -313,13 +313,13 @@
   background-image: url("bower_components/fancybox/source/fancybox_sprite.png");
 }
 
-/* line 17, scss/_template.scss */
+/* line 18, scss/_template.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 22, scss/_template.scss */
+/* line 23, scss/_template.scss */
 body {
   background: #ddd;
 }
@@ -421,7 +421,7 @@ footer {
 #arrow_image {
   position: fixed;
   left: 1700px;
-  top: 900px;
+  top: 850px;
 }
 /* line 128, scss/_template.scss */
 #arrow_image:hover {
@@ -475,7 +475,12 @@ footer {
   background-position: 135px -45px;
 }
 
-/* line 26, scss/_home-page.scss */
+/* line 23, scss/_home-page.scss */
+* {
+  transition: all 0.5s;
+}
+
+/* line 33, scss/_home-page.scss */
 #home #content {
   width: 1062px;
   height: 100%;
@@ -485,7 +490,7 @@ footer {
   border: 1px solid #bcbcbc;
   border-top: 0;
 }
-/* line 37, scss/_home-page.scss */
+/* line 44, scss/_home-page.scss */
 #home h1, #home h2 {
   font-size: 25px;
   font-family: ArianAMURegular;
@@ -493,13 +498,13 @@ footer {
   margin-left: 60px;
   padding-top: 40px;
 }
-/* line 43, scss/_home-page.scss */
+/* line 50, scss/_home-page.scss */
 #home .section1 {
   padding-top: 20px;
   margin: 0 auto;
   width: 954px;
 }
-/* line 47, scss/_home-page.scss */
+/* line 54, scss/_home-page.scss */
 #home .section1 p {
   font-size: 13px;
   color: #525253;
@@ -510,15 +515,41 @@ footer {
   width: 943px;
   margin-top: 10px;
 }
-/* line 50, scss/_home-page.scss */
+/* line 57, scss/_home-page.scss */
 #home .section1 p:last-child {
   margin-bottom: 20px;
 }
-/* line 53, scss/_home-page.scss */
+/* line 60, scss/_home-page.scss */
 #home .section1 img {
   padding-left: 6px;
 }
 
+@media screen and (max-width: 1081px) {
+  /* line 69, scss/_home-page.scss */
+  #Header_nav {
+    width: 74%;
+  }
+
+  /* line 73, scss/_home-page.scss */
+  #home #content {
+    width: 79%;
+  }
+
+  /* line 77, scss/_home-page.scss */
+  #home .section1 {
+    width: 100%;
+  }
+
+  /* line 81, scss/_home-page.scss */
+  #home .section1 img {
+    width: 32.3%;
+  }
+
+  /* line 85, scss/_home-page.scss */
+  #home .section1 p {
+    width: 98%;
+  }
+}
 /* line 23, scss/_stuff-page.scss */
 #coaches #content {
   width: 1062px;

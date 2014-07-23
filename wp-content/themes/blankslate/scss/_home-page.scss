@@ -20,8 +20,15 @@ $body_height:1062px;
 	padding-top:40px;
 }
 
+*{
+	transition:all 0.5s;
+}
+
 #home 
 {
+
+
+
 	#content
 		{
 			width:$body_height;
@@ -57,6 +64,31 @@ $body_height:1062px;
 }
 
 
+@media screen and (max-width: 1081px){
+
+	#Header_nav{
+		width: 74%;
+	}
+
+	#home #content{
+		width: 79%;
+	}
+
+	#home .section1{
+		width: 100%;
+	}
+
+	#home .section1 img{
+		width: 32.3%;
+	}
+
+	#home .section1 p{
+		width: 98%;
+	}
+
+
+
+}
 
 
 
