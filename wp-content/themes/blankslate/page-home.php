@@ -6,8 +6,10 @@
 <h1 class="entry-title"><?php the_title(); ?></h1>
 </header>
 <section class="entry-content">
+<div id="homeImages">
 <?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?>
 <?php the_content(); ?>
+</div>
 <div class="entry-links"><?php wp_link_pages(); ?></div>
 </section>
 </article>

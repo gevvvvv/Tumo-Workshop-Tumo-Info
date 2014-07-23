@@ -322,9 +322,10 @@
 /* line 23, scss/_template.scss */
 body {
   background: #ddd;
+  overflow-x: hidden;
 }
 
-/* line 27, scss/_template.scss */
+/* line 28, scss/_template.scss */
 #Above_Header {
   width: 100%;
   height: 133px;
@@ -332,30 +333,66 @@ body {
   border-bottom: 1px solid #bcbcbc;
 }
 
-/* line 35, scss/_template.scss */
+/* line 36, scss/_template.scss */
 #Header_nav {
   width: 1043px;
   height: 133px;
   margin: 0 auto;
 }
 
-/* line 42, scss/_template.scss */
+/* line 43, scss/_template.scss */
 #Header_logo {
   float: left;
 }
 
-/* line 47, scss/_template.scss */
+/* line 48, scss/_template.scss */
 #Some_text_under_logo {
   margin-left: 25px;
   margin-top: -35px;
 }
 
-/* line 53, scss/_template.scss */
+@media screen and (max-width: 1081px) {
+  /* line 55, scss/_template.scss */
+  #Header_nav {
+    width: 74%;
+  }
+
+  /* line 58, scss/_template.scss */
+  footer {
+    width: 100% !important;
+  }
+
+  /* line 61, scss/_template.scss */
+  #Header_logo {
+    float: none;
+    margin: 0px auto;
+    width: 168px;
+  }
+
+  /* line 66, scss/_template.scss */
+  #Above_Header {
+    height: 233px;
+  }
+
+  /* line 70, scss/_template.scss */
+  .menu-main-menu-container {
+    float: none !important;
+    margin: 55px auto;
+    width: 587px;
+  }
+}
+@media screen and (max-width: 816px) {
+  /* line 81, scss/_template.scss */
+  #Above_Header {
+    height: 352px;
+  }
+}
+/* line 88, scss/_template.scss */
 .menu-main-menu-container {
   float: right;
   margin-top: 55px;
 }
-/* line 59, scss/_template.scss */
+/* line 94, scss/_template.scss */
 .menu-main-menu-container #menu-main-menu li {
   display: inline-block;
   list-style-type: none;
@@ -364,14 +401,14 @@ body {
   margin-left: 20px;
   font-size: 18px;
 }
-/* line 67, scss/_template.scss */
+/* line 102, scss/_template.scss */
 .menu-main-menu-container #menu-main-menu li a {
   text-decoration: none;
   color: black;
   transition: all 0.3s;
 }
 
-/* line 77, scss/_template.scss */
+/* line 112, scss/_template.scss */
 footer {
   width: 1062px;
   height: 78px;
@@ -384,57 +421,57 @@ footer {
   padding-bottom: 15px;
 }
 
-/* line 90, scss/_template.scss */
+/* line 125, scss/_template.scss */
 .Copyright {
   float: left;
   padding-top: 10px;
 }
 
-/* line 96, scss/_template.scss */
+/* line 131, scss/_template.scss */
 #second_item {
   line-height: 25px;
 }
 
-/* line 101, scss/_template.scss */
+/* line 136, scss/_template.scss */
 .right_footer {
   float: right;
 }
 
-/* line 106, scss/_template.scss */
+/* line 141, scss/_template.scss */
 #masters {
   padding-top: 10px;
 }
 
-/* line 111, scss/_template.scss */
+/* line 146, scss/_template.scss */
 #find_us {
   margin-left: 125px;
   margin-top: 8px;
 }
 
-/* line 117, scss/_template.scss */
+/* line 152, scss/_template.scss */
 #Logo_row li {
   display: inline-block;
   list-style-type: none;
 }
 
-/* line 123, scss/_template.scss */
+/* line 158, scss/_template.scss */
 #arrow_image {
   position: fixed;
   left: 1700px;
   top: 850px;
 }
-/* line 128, scss/_template.scss */
+/* line 163, scss/_template.scss */
 #arrow_image:hover {
   cursor: pointer;
 }
-/* line 132, scss/_template.scss */
+/* line 167, scss/_template.scss */
 #arrow_image img {
   transition: opacity 0.5s;
   width: 66px;
   opacity: 0;
 }
 
-/* line 139, scss/_template.scss */
+/* line 174, scss/_template.scss */
 #fb_logo {
   background-image: url(http://localhost/wp-content/uploads/2014/07/socialIcons.png);
   background-repeat: no-repeat;
@@ -448,7 +485,7 @@ footer {
   background-position: 0px -45px;
 }
 
-/* line 142, scss/_template.scss */
+/* line 177, scss/_template.scss */
 #gmail_logo {
   background-image: url(http://localhost/wp-content/uploads/2014/07/socialIcons.png);
   background-repeat: no-repeat;
@@ -462,7 +499,7 @@ footer {
   background-position: -136px -45px;
 }
 
-/* line 145, scss/_template.scss */
+/* line 180, scss/_template.scss */
 #twitter_logo {
   background-image: url(http://localhost/wp-content/uploads/2014/07/socialIcons.png);
   background-position: 135px 0px;
@@ -475,7 +512,7 @@ footer {
   background-position: 135px -45px;
 }
 
-/* line 149, scss/_template.scss */
+/* line 184, scss/_template.scss */
 #facebook {
   background-image: url(http://localhost/wp-content/uploads/2014/07/socialIcons.png);
   height: 44px;
@@ -484,12 +521,12 @@ footer {
   -webkit-transition: background-position 0.3s;
 }
 
-/* line 157, scss/_template.scss */
+/* line 192, scss/_template.scss */
 #facebook:hover {
   background-position: 0px 45px;
 }
 
-/* line 161, scss/_template.scss */
+/* line 196, scss/_template.scss */
 #gmail1 {
   background-image: url(http://localhost/wp-content/uploads/2014/07/socialIcons.png);
   height: 44px;
@@ -498,12 +535,12 @@ footer {
   -webkit-transition: background-position 0.3s;
 }
 
-/* line 169, scss/_template.scss */
+/* line 204, scss/_template.scss */
 #gmail1:hover {
   background-position: -136px 45px;
 }
 
-/* line 173, scss/_template.scss */
+/* line 208, scss/_template.scss */
 #twitter1 {
   background-image: url(http://localhost/wp-content/uploads/2014/07/socialIcons.png);
   height: 44px;
@@ -512,7 +549,7 @@ footer {
   -webkit-transition: background-position 0.3s;
 }
 
-/* line 181, scss/_template.scss */
+/* line 216, scss/_template.scss */
 #twitter1:hover {
   background-position: 136px 45px;
 }
@@ -568,45 +605,80 @@ footer {
 
 @media screen and (max-width: 1081px) {
   /* line 69, scss/_home-page.scss */
-  #Header_nav {
-    width: 74%;
-  }
-
-  /* line 73, scss/_home-page.scss */
   #home #content {
-    width: 79%;
-  }
-
-  /* line 77, scss/_home-page.scss */
-  #home .section1 {
     width: 100%;
   }
 
-  /* line 81, scss/_home-page.scss */
+  /* line 73, scss/_home-page.scss */
+  #home .section1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* line 78, scss/_home-page.scss */
   #home .section1 img {
-    width: 32.3%;
+    width: 30%;
+    margin: 0% 0.01%;
   }
 
-  /* line 85, scss/_home-page.scss */
+  /* line 83, scss/_home-page.scss */
   #home .section1 p {
-    width: 98%;
+    width: 84%;
   }
 
-  /* line 89, scss/_home-page.scss */
-  footer {
-    width: 79%;
+  /* line 87, scss/_home-page.scss */
+  #home .section1 p:last-child {
+    margin: 20px auto;
   }
 
-  /* line 93, scss/_home-page.scss */
+  /* line 91, scss/_home-page.scss */
+  #homeImages {
+    width: 70%;
+    margin: 0px auto;
+  }
+
+  /* line 97, scss/_home-page.scss */
+  #home h1 {
+    text-align: center;
+  }
+
+  /* line 103, scss/_home-page.scss */
   #Header_logo {
     float: none;
     margin: 0px auto;
     width: 168px;
   }
+}
+@media screen and (max-width: 816px) {
+  /* line 118, scss/_home-page.scss */
+  #home .section1 img {
+    width: 84.3%;
+    margin: 0% 0.01%;
+    height: auto;
+  }
 
-  /* line 99, scss/_home-page.scss */
+  /* line 124, scss/_home-page.scss */
+  .menu-main-menu-container #menu-main-menu li {
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  /* line 130, scss/_home-page.scss */
+  .menu-main-menu-container {
+    width: 185px;
+  }
+
+  /* line 135, scss/_home-page.scss */
   #Above_Header {
-    height: 233px;
+    height: 352px;
+  }
+
+  /* line 139, scss/_home-page.scss */
+  #home h1, #home h2 {
+    margin-left: 0px;
+    font-size: 18px;
+    text-align: center;
   }
 }
 /* line 23, scss/_stuff-page.scss */

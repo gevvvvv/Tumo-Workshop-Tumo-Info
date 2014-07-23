@@ -22,6 +22,7 @@
 body
 {
 	background:#ddd;
+	overflow-x: hidden;
 }
 #Above_Header
 {
@@ -47,6 +48,40 @@ body
 {
 	margin-left:25px;
 	margin-top:-35px;
+}
+
+@media screen and (max-width: 1081px){
+
+	#Header_nav{
+		width: 74%;
+	}
+	footer{
+		width: 100% !important;
+	}
+	#Header_logo{
+		float: none;
+		margin: 0px auto;
+		width: 168px;
+	}
+	#Above_Header{
+		height: 233px;
+	}
+
+	.menu-main-menu-container{
+		float: none !important;
+		margin: 55px auto;
+		width: 587px;
+	}
+
+
+}
+
+@media screen and (max-width: 816px){
+
+	#Above_Header{
+		height: 352px;
+	}
+
 }
 
 .menu-main-menu-container
