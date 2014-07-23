@@ -111,6 +111,7 @@ footer {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 /* line 120, scss/_template.scss */
 #facebook {
   background-image: url(http://localhost/wp-content/uploads/2014/07/socialIcons.png);
@@ -154,9 +155,12 @@ footer {
 }
 
 /* line 34, scss/_home-page.scss */
+=======
+/* line 24, scss/_home-page.scss */
+>>>>>>> 2e264cc682991dcf4754ac3d1f6c3553be647cb0
 #home #content {
   width: 1062px;
-  height: 2015px;
+  height: 100%;
   background: #fafafa;
   clear: both;
   margin: 0 auto;
@@ -164,15 +168,16 @@ footer {
   border-top: 0;
 }
 
-/* line 45, scss/_home-page.scss */
+/* line 35, scss/_home-page.scss */
 #home h1, h2 {
   font-size: 25px;
   font-family: ArianAMURegular;
   color: #666666;
-  margin-left: 44px;
+  margin-left: 60px;
   padding-top: 40px;
 }
 
+<<<<<<< HEAD
 /* line 50, scss/_home-page.scss */
 #home .entry-content p:nth-child(1), .entry-content p:nth-child(2), .entry-content p:nth-child(5), .entry-content p:nth-child(8) {
   margin-left: 44px;
@@ -181,18 +186,32 @@ footer {
 /* line 7, scss/_home-page.scss */
 #home .entry-content p:nth-child(1) img, .entry-content p:nth-child(2) img, .entry-content p:nth-child(5) img, .entry-content p:nth-child(8) img {
   padding-left: 5px;
+=======
+/* line 40, scss/_home-page.scss */
+#home .section1 {
+  padding-top: 20px;
+  margin: 0 auto;
+  width: 954px;
+>>>>>>> 2e264cc682991dcf4754ac3d1f6c3553be647cb0
 }
-
-/* line 55, scss/_home-page.scss */
-#home .entry-content p:nth-child(3), .entry-content p:nth-child(6), .entry-content p:nth-child(9), .entry-content p:nth-child(11) {
+/* line 44, scss/_home-page.scss */
+#home .section1 p {
   font-size: 13px;
   color: #525253;
   font-family: ArianAMURegular;
   line-height: 18px;
   text-align: justify;
-  margin-left: 44px;
-  width: 951px;
+  margin-left: 6px;
+  width: 943px;
   margin-top: 10px;
+}
+/* line 47, scss/_home-page.scss */
+#home .section1 p:last-child {
+  margin-bottom: 20px;
+}
+/* line 50, scss/_home-page.scss */
+#home .section1 img {
+  padding-left: 6px;
 }
 
 /* line 21, scss/_stuff-page.scss */
