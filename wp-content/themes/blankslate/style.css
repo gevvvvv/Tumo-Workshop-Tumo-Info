@@ -549,6 +549,23 @@ footer {
   #home .section1 p {
     width: 98%;
   }
+
+  /* line 89, scss/_home-page.scss */
+  footer {
+    width: 79%;
+  }
+
+  /* line 93, scss/_home-page.scss */
+  #Header_logo {
+    float: none;
+    margin: 0px auto;
+    width: 168px;
+  }
+
+  /* line 99, scss/_home-page.scss */
+  #Above_Header {
+    height: 233px;
+  }
 }
 /* line 23, scss/_stuff-page.scss */
 #coaches #content {
