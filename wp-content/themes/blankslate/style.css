@@ -835,3 +835,49 @@ footer {
   line-height: 60px;
   color: #000;
 }
+
+@media screen and (max-width: 1024px) {
+  /* line 64, scss/_about-page.scss */
+  #about-us #content {
+    width: 100%;
+  }
+
+  /* line 68, scss/_about-page.scss */
+  #about-us .section1 {
+    width: 89.3%;
+  }
+
+  /* line 72, scss/_about-page.scss */
+  #about-us .section1 img {
+    width: 32%;
+    padding-left: 1%;
+  }
+
+  /* line 77, scss/_about-page.scss */
+  #about-us .section1 p:last-child {
+    width: 98%;
+  }
+}
+@media screen and (max-width: 735px) {
+  /* line 86, scss/_about-page.scss */
+  #about-us .section1 img {
+    width: 98%;
+    height: auto;
+    padding-left: 1%;
+  }
+
+  /* line 92, scss/_about-page.scss */
+  #about-us .section1 p:last-child {
+    width: 98%;
+  }
+
+  /* line 96, scss/_about-page.scss */
+  #about-us header h1 {
+    font-size: 19px;
+    font-family: ArianAMURegular;
+    color: #666666;
+    margin-left: 55px;
+    padding-top: 40px;
+    text-align: center;
+  }
+}
